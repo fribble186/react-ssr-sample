@@ -42,6 +42,23 @@ https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/server-side-rendering-ss
 https://zhuanlan.zhihu.com/p/157214413 (比较老的实现，可以不看)
 
 ### 首先从最简单的 ssr 开始
+启动一个 express 应用，返回 html 字符串让浏览器解析，这个就是最原始最简单的 ssr 应用。
+
+``` js
+import express from "express";
+
+const app = express();
+app.get('/', (req, res) => {
+    res.send(`<html>
+        <head></head>
+        <body>
+            <div id="root">server side render</div>
+        </body>
+    </html>`)
+});
+
+app.listen(3001, () => console.log("listen on 3001"));
+```
 
 ### 最简单的 react ssr
 
