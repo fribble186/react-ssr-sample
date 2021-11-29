@@ -1,4 +1,4 @@
-# 初探 SSR
+# 探索 SSR
 ## 渲染这件事可以放哪里
 
 ### 什么是渲染
@@ -27,4 +27,27 @@
 | CSR     |    长    |  不友好  |        可以        |     不需要     |   简单   |
 | SSR     |    短    |  友好    |        可以        |      需要     |    难    |
 | PR      |    短    |  友好    |       不可以       |     不需要     |   中等   |
+
+## 自己实现server side render
+参考文章
+
+https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/server-side-rendering-ssr-in-reactjs-part1-d2a11890abfc
+
+https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/server-side-rendering-ssr-in-reactjs-part2-179ed654457e
+
+https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/server-side-rendering-ssr-in-reactjs-part3-7f2097963754
+
+https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/server-side-rendering-ssr-in-reactjs-part4-38649606d384
+
+https://zhuanlan.zhihu.com/p/157214413 (比较老的实现，可以不看)
+
+### 首先从最简单的 ssr 开始
+
+### 最简单的 react ssr
+
+### 加上路由的 react ssr，同构
+
+### 有状态管理的 react ssr
+
+### 把数据请求放到 server 端，实现真正的 server side render
 
