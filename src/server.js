@@ -21,7 +21,6 @@ app.get("*", (req, res) => {
     let routes = useRoutes(RouteList);
     return routes;
   };
-  console.log(promises)
   Promise.all(promises).then(() => {
     const content = renderToString(
       <Provider store={store}>
